@@ -23,13 +23,14 @@ class SimpleNoseSelenium(Plugin):
         )
 
     def configure(self, options, conf):
+        global BROWSER
         super().configure(options, conf)
         if self.enabled:
             BROWSER = options.browser
             self._check_options_validity(BROWSER, ["FIREFOX", "CHROME"])
 
     def _check_options_validity(self, item, list_options, flag="--browser"):
-        if item not in list:
+        if item not in list_options:
             raise TypeError(
                 "{} not in available options for {}: {}".format(
                     item, flag, ",".join(list_options))
@@ -48,7 +49,7 @@ def build_webdriver(name="", tags=[], public=False):
         wd = webdriver.Chrome()
     else:
         raise TypeError(
-            "WebDriver does not have a driver for local %s".format(BROWSER))
+            "WebDriver does not have a driver for local {}".format(BROWSER))
 
     # We give it a base implicty wait timeout
     wd.implicitly_wait(60)
