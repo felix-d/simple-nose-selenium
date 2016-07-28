@@ -1,24 +1,17 @@
-import sys
-try:
-    import ez_setup
-    ez_setup.use_setuptools()
-except ImportError:
-    pass
-
 from setuptools import setup
 
 setup(
     name='simple-nose-selenium',
     version='0.01',
     author='Felix Descoteaux',
-    author_email = 'flx.descoteaux@gmail.com',
-    description = 'Run your TestCase\'s in multiple browsers',
-    py_modules = ['simple_nose_selenium'],
-    entry_points = {
-        'nose.plugins.0.10': [
-            'simple-nose-selenium = nose_selenium:NoseSelenium'
-        ]
-    },
+	author_email = 'flx.descoteaux@gmail.com',
+	description = 'Run your TestCase\'s in multiple browsers',
+	py_modules = ['simple_nose_selenium'],
+	entry_points = {
+		'nose.plugins.0.10': [
+			'simple-nose-selenium = simple_nose_selenium:SimpleNoseSelenium'
+		]
+	},
     url='http://github.com/felix-d/simple-nose-selenium',
     license='Mozilla Public License 2.0 (MPL 2.0)',
     keywords='nose selenium webdriver',

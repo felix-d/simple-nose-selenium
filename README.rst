@@ -10,7 +10,7 @@ nosetests command line options
 
 .. code-block:: bash
 
-    $ nosetests --with-nose-selenium --help
+    $ nosetests --with-simple-nose-selenium --help
     Usage: nosetests [options]
 
     Options:
@@ -24,7 +24,7 @@ Example Commands
 
 .. code-block:: bash
 
-    $ nosetests --with-nose-selenium --browser=FIREFOX
+    $ nosetests --with-simple-nose-selenium --browser=FIREFOX
 
 Inheriting from SeleniumTestCase
 --------------------------------
