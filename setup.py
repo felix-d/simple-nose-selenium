@@ -5,7 +5,7 @@ setup(
     version='0.01',
     author='Felix Descoteaux',
 	author_email = 'flx.descoteaux@gmail.com',
-	description = 'Run your TestCase\'s in multiple browsers',
+	description = 'Run your Selenium TestCase\'s in multiple browsers',
 	py_modules = ['simple_nose_selenium'],
 	entry_points = {
 		'nose.plugins.0.10': [
