@@ -3,7 +3,7 @@ simple-nose-selenium
 
 A simple Selenium WebDriver plugin for nose.
 
-This plugin is a python3 stripped down version of `nose-selenium <https://github.com/klrmn/nose-selenium>`_.
+This plugin is a python3 only stripped down version of `nose-selenium <https://github.com/klrmn/nose-selenium>`_.
 
 nosetests command line options
 ==============================
@@ -15,10 +15,9 @@ nosetests command line options
 
     Options:
       ...
-      --with-nose-selenium  Enable plugin NoseSelenium: None
-                            [NOSE_WITH_NOSE_SELENIUM]
-      --browser=BROWSER     Run this type of browser (default ['FIREFOX'], options
-                            for local [FIREFOX,  CHROME]
+      --with-simple-nose-selenium   Enable plugin Simple Nose Selenium
+      --browser=BROWSER             Run this type of browser (default ['FIREFOX'], options
+                                    for local [FIREFOX,  CHROME]
 
 Example Commands
 ----------------

@@ -16,7 +16,7 @@ setup(
     py_modules = ['simple_nose_selenium'],
     entry_points = {
         'nose.plugins.0.10': [
-            'nose-selenium = nose_selenium:NoseSelenium'
+            'simple-nose-selenium = nose_selenium:NoseSelenium'
         ]
     },
     url='http://github.com/felix-d/simple-nose-selenium',
