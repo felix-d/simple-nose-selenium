@@ -16,8 +16,8 @@ nosetests command line options
     Options:
       ...
       --with-simple-nose-selenium   Enable plugin Simple Nose Selenium
-      --browser=BROWSER             Run this type of browser (default ['FIREFOX'], options
-                                    for local [FIREFOX,  CHROME]
+      --browser=BROWSER             Run this type of browser (default ['FIREFOX'], options:
+                                    [FIREFOX,  CHROME, SAUCELABS]
 
 Example Commands
 ----------------
@@ -25,6 +25,19 @@ Example Commands
 .. code-block:: bash
 
     $ nosetests --with-simple-nose-selenium --browser=FIREFOX
+
+
+To run your tests on Saucelabs you need to set the required environment variables first.
+
+.. code-block:: bash
+
+    $ export SAUCELABS_USERNAME=foo
+    $ export SAUCELABS_ACCESSKEY=123key
+    $ export SAUCELABS_PLATFORM=windows
+    $ export SAUCELABS_BROWSER_NAME=chrome
+    $ export SAUCELABS_BROWSER_VERSION=4.1
+    $ nosetests --with-simple-nose-selenium --browser=SAUCELABS
+
 
 Inheriting from SeleniumTestCase
 --------------------------------

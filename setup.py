@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='simple-nose-selenium',
-    version='0.01',
+    version='0.02',
     author='Felix Descoteaux',
 	author_email = 'flx.descoteaux@gmail.com',
 	description = 'Run your Selenium TestCase\'s in multiple browsers',
