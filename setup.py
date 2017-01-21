@@ -1,13 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='simple-nose-selenium',
     version='0.2.0',
     author='Felix Descoteaux',
 	author_email = 'flx.descoteaux@gmail.com',
-	description = 'Run your Selenium TestCase\'s in chrome, firefox or
-    saucelabs',
-    packages=setuptools.find_packages(),
+	description = 'Run your Selenium TestCase\'s in chrome, firefox or saucelabs',
+    packages=find_packages(),
 	entry_points = {
 		'nose.plugins.0.10': [
 			'simple-nose-selenium = simple_nose_selenium:SimpleNoseSelenium'
