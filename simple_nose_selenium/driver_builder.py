@@ -1,3 +1,5 @@
+from selenium import webdriver
+
 from simple_nose_selenium.simple_nose_selenium import CHROME, FIREFOX, SAUCELABS
 from simple_nose_selenium.saucelabs import SaucelabsDriverBuilder
 
