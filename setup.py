@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='simple-nose-selenium',
-    version='0.2.0',
+    version='0.2.1',
     author='Felix Descoteaux',
 	author_email = 'flx.descoteaux@gmail.com',
 	description = 'Run your Selenium TestCase\'s in chrome, firefox or saucelabs',
